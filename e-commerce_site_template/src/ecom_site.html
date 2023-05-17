@@ -1,0 +1,734 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>E-commerce Template</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="ecom_site.css" type="text/css" media="screen" />
+        <!--Font Awesome v6.3.0 CDN-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--Google Fonts API -Rubik-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <!--Div for spacing search container and top of webpage-->
+        <div class="tspace"></div>
+
+        <!--Flex Container for site title and global search bar -->
+        <div id="header" class="contain">
+            <img src="../assets/shop_a_bit.png" alt="shop_a_bit_title_image" />
+            <nav id="search-g" title="This is the global search bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input id="search-all" type="text" name="search-all" placeholder="Search entire store here..." />
+            </nav>
+        </div>
+
+        <!--Nav Flex container with links to store sections-->
+        <nav id="topnav" class="contain">
+            <a class="pagelink">
+                <div class="pagelink_titles">
+                    Home
+                </div>
+            </a>
+
+            <a class="pagelink">
+                <div class="pagelink_titles">
+                    Deals
+                </div>
+            </a>
+
+            <a class="pagelink" href="#">
+                <div class="pagelink_titles">
+                    Just In
+                </div>
+            </a>
+
+            <a class="pagelink">
+                <div class="pagelink_titles">
+                    Top Sellers
+                </div>
+            </a>
+
+            <a class="pagelink">
+                <div class="pagelink_titles">
+                    Brands Store
+                </div>
+            </a>
+        </nav>
+
+        <!--Main Site Content Related to the Store-->
+        <article id="content" class="contain">
+            <main>
+                <!--Flex Container for shop filter and product card sections-->
+                <div class="shop_container">
+                    <!--Filter Settings Section-->
+                    <nav class="filtering">
+
+                        <div class="filters">
+                            <div class="fil_title">
+                                Filters
+                            </div>
+                        </div>
+
+                        <div class="filter_cat">
+                            <div class="fil_title">
+                                Category
+                            </div>
+                            <div class="cat_all filtration_labels">
+                                <i class="fa-solid fa-chevron-left"></i>
+                                All-Categories
+                            </div>
+                            <div class="cat_now filtration_labels">
+                                <i class="fa-solid fa-chevron-left"></i>
+                                Sports Equipment
+                            </div>
+                            <div class="cat_1 filtration_labels">
+                                Soccer
+                            </div>
+                            <div class="cat_2 filtration_labels">
+                                Tennis
+                            </div>
+                            <div class="cat_3 filtration_labels">
+                                Baseball
+                            </div>
+                            <div class="cat_4 filtration_labels">
+                                Running
+                            </div>
+                            <div class="cat_5 filtration_labels">
+                                Gym
+                            </div>
+                        </div>
+
+                        <div class="filter_avail">
+                            <div class="fil_title">
+                                Availability
+                            </div>
+                            <div class="avail">
+                                <input type="radio" name="availability" value="In-Stock" />
+                                <label class="filtration_labels" for="in">In-Stock</label>
+                                <br />
+                                <input type="radio" name="availability" value="3 days" />
+                                <label class="filtration_labels" for="3d">Up to 3 Days</label>
+                                <br />
+                                <input type="radio" name="availability" value="5 days" />
+                                <label class="filtration_labels" for="5d">Up to 5 days</label>
+                                <br />
+                                <input type="radio" name="availability" value="7 days" />
+                                <label class="filtration_labels" for="7d">Up to 7 days</label>
+                                <br />
+                                <input type="radio" name="availability" value="12 days" />
+                                <label class="filtration_labels" for="12d">Up to 12 Days</label>
+                                <br />
+                                <input type="radio" name="availability" value="15 days" />
+                                <label class="filtration_labels" for="15d">Up to 15 days</label>
+                                <br />
+                                <input type="radio" name="availability" value="30 days" />
+                                <label class="filtration_labels" for="30d">Up to 30 days</label>
+                                <br />
+                                </div>
+                        </div>
+
+                        <div class="filter_price">
+                            <div class="fil_title">
+                                Price
+                            </div>
+                            <div class="slider">
+                                <div class="progress">
+
+                                </div>
+                                <div class="range_input">
+                                    <input class="range_min" type="range" value="0" min="0" max="50000"/>
+                                    <input class="range_max" type="range" value="50000" min="0" max="50000"/>
+                                </div>
+                            </div>
+                            <div class="price_input">
+                                <span>Min</span>
+                                <input class="input_min" min="0" max="50000" name="" type="number" value="0" step="100"/>
+                                <div class="separator"> - </div>
+                                <span>Max</span>
+                                <input class="input_max" min="0" max="50000" name="" type="number" value="50000" step="100"/>
+                            </div>
+                        </div>
+
+                        <div class="filter_brand">
+                            <div class="fil_title">
+                                Brand
+                            </div>
+                            <div class="brands">
+                                <input type="checkbox" name="brand1" value="Asics" />
+                                <label class="filtration_labels" for="brand1">Asics</label>
+                                <br />
+                                <input type="checkbox" name="brand2" value="Danya" />
+                                <label class="filtration_labels" for="brand2">Up to 3 Days</label>
+                                <br />
+                                <input type="checkbox" name="brand3" value="Kerb" />
+                                <label class="filtration_labels" for="brand3">Up to 5 days</label>
+                                <br />
+                                <input type="checkbox" name="brand4" value="Kick-co" />
+                                <label class="filtration_labels" for="brand4">Up to 7 days</label>
+                                <br />
+                                <input type="checkbox" name="brand5" value="Lift-Bro" />
+                                <label class="filtration_labels" for="brand5">Up to 12 Days</label>
+                                <br />
+                                <input type="checkbox" name=brand6" value="Lonsdale" />
+                                <label class="filtration_labels" for="brand6">Up to 15 days</label>
+                                <br />
+                                <input type="checkbox" name="brand7" value="Maxed" />
+                                <label class="filtration_labels" for="brand7">Up to 30 days</label>
+                                <br />
+                            </div>
+                        </div>
+
+                        <div class="filter_rating">
+                            <div class="fil_title">
+                                Rating
+                            </div>
+                            <div class="stars">
+                                <input type="radio" name="stars" value="4+" />
+                                <i class="fa-solid fa-star" style="color: #e6d200;"></i>
+                                <label class="filtration_labels" for="4+">4 and up</label>
+                                <br />
+                                <input type="radio" name="stars" value="3+" />
+                                <i class="fa-solid fa-star" style="color: #e6d200;"></i>
+                                <label class="filtration_labels" for="3+">3 and up</label>
+                                <br />
+                                <input type="radio" name="stars" value="2+" />
+                                <i class="fa-solid fa-star" style="color: #e6d200;"></i>
+                                <label class="filtration_labels" for="2+">2 and up</label>
+                                <br />
+                                <input type="radio" name="stars" value="1+" />
+                                <i class="fa-solid fa-star" style="color: #e6d200;"></i>
+                                <label class="filtration_labels" for="1+">1 and up</label>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <div class="shop_grid">
+
+                        <div class="toolbar">
+                            <div class="category_depth">
+                                <span class="bread_crumb">Sports</span>
+                                <span class="bread_crumb">Equipment</span>
+                            </div>
+                            <div class="tools">
+
+                            </div>
+                        </div>
+                        <!--Product Card Section-->
+                        <div class="products">
+                            <div class="prod_card">
+                                <a class="prod_page" href="https://codingforeverybody.com">
+                                    <img src="../assets/activity-4769731_640.jpg" class="prod_img" alt="" />
+                                    <div class="prod_title">
+                                           Cycling Helmet
+                                    </div>
+                                    <div class="prod_brand">
+                                        <a href="">Pao</a>
+                                    </div>
+                                    <div class="prod_price">
+                                        R 500
+                                    </div>
+                                    <div class="prod_stock">
+                                        In-stock
+                                    </div>
+                                    <div class="prod_rating">
+                                        <i class="fa-solid fa-star" style="color: #e6d200;"></i>
+                                        4.5 (238)
+                                    </div>
+                                    <div class="prod_add">
+                                        <button class="add_to_cart">
+                                            Add To Cart
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="prod_card">
+                                <a class="prod_page" href="https://codingforeverybody.com">
+                                    <img src="../assets/black-4900673_640.jpg" class="prod_img" alt="" />
+                                    <div class="prod_title">
+                                        Metal Stud Soccer Boots
+                                    </div>
+                                    <div class="prod_brand">
+                                        <a href="#">
+                                            Asics
+                                        </a>
+                                    </div>
+                                    <div class="prod_price">
+                                        R 1700
+                                    </div>
+                                    <div class="prod_stock">
+                                        Out-of-stock
+                                    </div>
+                                    <div class="prod_rating">
+                                        <i class="fa-solid fa-star" style="color: #e6d200;"></i>
+                                        4.5 (366)
+                                    </div>
+                                    <div class="prod_add">
+                                        <button class="add_to_cart">
+                                            Add To Cart
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="prod_card">
+                                <a class="prod_page" href="https://codingforeverybody.com">
+                                    <img src="../assets/spirit-hot-pistons-helmet-3785980_640.jpg" class="prod_img" alt="" />
+                                    <div class="prod_title">
+                                        Hot Pistons Bike Helmet
+                                    </div>
+                                    <div class="prod_brand">
+                                        <a href="#">
+                                            Spirit
+                                        </a>
+                                    </div>
+                                    <div class="prod_price">
+                                        R 950
+                                    </div>
+                                    <div class="prod_stock">
+                                        In-stock
+                                    </div>
+                                    <div class="prod_rating">
+                                        <i class="fa-solid fa-star" style="color: #e6d200;"></i>
+                                        4.6 (208)
+                                    </div>
+                                    <div class="prod_add">
+                                        <button class="add_to_cart">
+                                            Add To Cart
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="prod_card">
+                                <a class="prod_page" href="https://codingforeverybody.com">
+                                    <img src="../assets/adjustable-inline-skates-4895496_640.jpg" class="prod_img" alt="" />
+                                    <div class="prod_title">
+                                        Adjustable Inline Skates
+                                    </div>
+                                    <div class="prod_brand">
+                                        <a href="#">
+                                            Kerb
+                                        </a>
+                                    </div>
+                                    <div class="prod_price">
+                                        R 400
+                                    </div>
+                                    <div class="prod_stock">
+                                        In-stock
+                                    </div>
+                                    <div class="prod_rating">
+                                        <i class="fa-solid fa-star" style="color: #e6d200;"></i>
+                                        4.0 (123)
+                                    </div>
+                                    <div class="prod_add">
+                                        <button class="add_to_cart">
+                                            Add To Cart
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="prod_card">
+                                <a class="prod_page" href="https://codingforeverybody.com">
+                                    <img src="../assets/ping-pong paddles.jpg" class="prod_img" alt="" />
+                                    <div class="prod_title">
+                                        Ping-Pong Paddles
+                                    </div>
+                                    <div class="prod_brand">
+                                        <a href="#">
+                                            Pong-co
+                                        </a>
+                                    </div>
+                                    <div class="prod_price">
+                                        R 55
+                                    </div>
+                                    <div class="prod_stock">
+                                        In-stock
+                                    </div>
+                                    <div class="prod_rating">
+                                        <i class="fa-solid fa-star" style="color: #e6d200;"></i>
+                                        2.8 (40)
+                                    </div>
+                                    <div class="prod_add">
+                                        <button class="add_to_cart">
+                                            Add To Cart
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="prod_card">
+                                <a class="prod_page" href="https://codingforeverybody.com">
+                                    <img src="../assets/activity-5025174_640.jpg" class="prod_img" alt="" />
+                                    <div class="prod_title">
+                                        Maxed Tennis Racket
+                                    </div>
+                                    <div class="prod_brand">
+                                        <a href="#">
+                                            Maxed
+                                        </a>
+                                    </div>
+                                    <div class="prod_price">
+                                        R 610
+                                    </div>
+                                    <div class="prod_stock">
+                                        In-stock
+                                    </div>
+                                    <div class="prod_rating">
+                                        <i class="fa-solid fa-star" style="color: #e6d200;"></i>
+                                        3.8 (142)
+                                    </div>
+                                    <div class="prod_add">
+                                        <button class="add_to_cart">
+                                            Add To Cart
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="prod_card">
+                                <a class="prod_page" href="https://codingforeverybody.com">
+                                    <img src="../assets/gym-plates.jpg" class="prod_img" alt="" />
+                                    <div class="prod_title">
+                                        Gym Plates Set
+                                    </div>
+                                    <div class="prod_brand">
+                                        <a href="#">
+                                            Slayer
+                                        </a>
+                                    </div>
+                                    <div class="prod_price">
+                                        R 1400
+                                    </div>
+                                    <div class="prod_stock">
+                                        Out-of-stock
+                                    </div>
+                                    <div class="prod_rating">
+                                        <i class="fa-solid fa-star" style="color: #e6d200;"></i>
+                                        4.3 (533)
+                                    </div>
+                                    <div class="prod_add">
+                                        <button class="add_to_cart">
+                                            Add To Cart
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="prod_card">
+                                <a class="prod_page" href="https://codingforeverybody.com">
+                                    <img src="../assets/dumbells.png" class="prod_img" alt="" />
+                                    <div class="prod_title">
+                                        Dumbells
+                                    </div>
+                                    <div class="prod_brand">
+                                        <a href="#">
+                                            Lift-Bro
+                                        </a>
+                                    </div>
+                                    <div class="prod_price">
+                                        R 1700
+                                    </div>
+                                    <div class="prod_stock">
+                                        In-stock
+                                    </div>
+                                    <div class="prod_rating">
+                                        <i class="fa-solid fa-star" style="color: #e6d200;"></i>
+                                        4.1 (65)
+                                    </div>
+                                    <div class="prod_add">
+                                        <button class="add_to_cart">
+                                            Add To Cart
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="prod_card">
+                                <a class="prod_page" href="https://codingforeverybody.com">
+                                    <img src="../assets/soccer-ball-2844880_1280.png" class="prod_img" alt="" />
+                                    <div class="prod_title">
+                                        Soccer Ball
+                                    </div>
+                                    <div class="prod_brand">
+                                        <a href="#">
+                                            Kick-co
+                                        </a>
+                                    </div>
+                                    <div class="prod_price">
+                                        R 75
+                                    </div>
+                                    <div class="prod_stock">
+                                        In-stock
+                                    </div>
+                                    <div class="prod_rating">
+                                        <i class="fa-solid fa-star" style="color: #e6d200;"></i>
+                                        4.0 (44)
+                                    </div>
+                                    <div class="prod_add">
+                                        <button class="add_to_cart">
+                                            Add To Cart
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="prod_card">
+                                <a class="prod_page" href="https://codingforeverybody.com">
+                                    <img src="../assets/lonsdale-face-protector.jpg" class="prod_img" alt="" />
+                                    <div class="prod_title">
+                                        Lonsdale Face Protector
+                                    </div>
+                                    <div class="prod_brand">
+                                        <a href="#">
+                                            Lonsdale
+                                        </a>
+                                    </div>
+                                    <div class="prod_price">
+                                        R 580
+                                    </div>
+                                    <div class="prod_stock">
+                                        In-stock
+                                    </div>
+                                    <div class="prod_rating">
+                                        <i class="fa-solid fa-star" style="color: #e6d200;"></i>
+                                        4.7 (492)
+                                    </div>
+                                    <div class="prod_add">
+                                        <button class="add_to_cart">
+                                            Add To Cart
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="prod_card">
+                                <a class="prod_page" href="https://codingforeverybody.com">
+                                    <img src="../assets/softball.jpg" class="prod_img" alt="" />
+                                    <div class="prod_title">
+                                        Softball
+                                    </div>
+                                    <div class="prod_brand">
+                                        <a href="#">
+                                            Throw-co
+                                        </a>
+                                    </div>
+                                    <div class="prod_price">
+                                        R 90
+                                    </div>
+                                    <div class="prod_stock">
+                                        In-stock
+                                    </div>
+                                    <div class="prod_rating">
+                                        <i class="fa-solid fa-star" style="color: #e6d200;"></i>
+                                        3.9 (105)
+                                    </div>
+                                    <div class="prod_add">
+                                        <button class="add_to_cart">
+                                            Add To Cart
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="prod_card">
+                                <a class="prod_page" href="https://codingforeverybody.com">
+                                    <img src="../assets/winner-catching-mitt.jpg" class="prod_img" alt="" />
+                                    <div class="prod_title">
+                                        Winner Catiching Mitt
+                                    </div>
+                                    <div class="prod_brand">
+                                        <a href="#">
+                                            Winner
+                                        </a>
+                                    </div>
+                                    <div class="prod_price">
+                                        R 420
+                                    </div>
+                                    <div class="prod_stock">
+                                        In-stock
+                                    </div>
+                                    <div class="prod_rating">
+                                        <i class="fa-solid fa-star" style="color: #e6d200;"></i>
+                                        3.5 (70)
+                                    </div>
+                                    <div class="prod_add">
+                                        <button class="add_to_cart">
+                                            Add To Cart
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="prod_card">
+                                <a class="prod_page" href="https://codingforeverybody.com">
+                                    <img src="../assets/merell hiking shoes.png" class="prod_img" alt="" />
+                                    <div class="prod_title">
+                                        Merrel Hiking Shoes
+                                    </div>
+                                    <div class="prod_brand">
+                                        <a href="#">
+                                            Merrel
+                                        </a>
+                                    </div>
+                                    <div class="prod_price">
+                                        R 1200
+                                    </div>
+                                    <div class="prod_stock">
+                                        In-stock
+                                    </div>
+                                    <div class="prod_rating">
+                                        <i class="fa-solid fa-star" style="color: #e6d200;"></i>
+                                        4.1 (164)
+                                    </div>
+                                    <div class="prod_add">
+                                        <button class="add_to_cart">
+                                            Add To Cart
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="prod_card">
+                                <a class="prod_page" href="https://codingforeverybody.com">
+                                    <img src="../assets/electric-car-8310_640.jpg" class="prod_img" alt="" />
+                                    <div class="prod_title">
+                                        Danya Electric Bike
+                                    </div>
+                                    <div class="prod_brand">
+                                        <a href="#">
+                                            Danya
+                                        </a>
+                                    </div>
+                                    <div class="prod_price">
+                                        R 10,000
+                                    </div>
+                                    <div class="prod_stock">
+                                        In-stock
+                                    </div>
+                                    <div class="prod_rating">
+                                        <i class="fa-solid fa-star" style="color: #e6d200;"></i>
+                                        4.8 (521)
+                                    </div>
+                                    <div class="prod_add">
+                                        <button class="add_to_cart">
+                                            Add To Cart
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="prod_card">
+                                <a class="prod_page" href="https://codingforeverybody.com">
+                                    <img src="../assets/meindl-running shoes.jpg" class="prod_img" alt="" />
+                                    <div class="prod_title">
+                                        Meindl Running Shoes
+                                    </div>
+                                    <div class="prod_brand">
+                                        <a href="#">
+                                           Meindl
+                                        </a>
+                                    </div>
+                                    <div class="prod_price">
+                                        R 750
+                                    </div>
+                                    <div class="prod_stock">
+                                        Out-of-stock
+                                    </div>
+                                    <div class="prod_rating">
+                                        <i class="fa-solid fa-star" style="color: #e6d200;"></i>
+                                        3.2 (683)
+                                    </div>
+                                    <div class="prod_add">
+                                        <button class="add_to_cart">
+                                            Add To Cart
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </button>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </article>
+
+        <!--Footer section linking to sit-partner info contact info licensing and legal info-->
+        <footer>
+            <div class="foot_container">
+                <div class="foot_shop">
+                    <h4>Shop</h4>
+                    <ul>
+                        <li><a href="#">Daily Deals</a></li>
+                        <li><a href="#">App Only Deals</a></li>
+                        <li><a href="#">Clearance Sale</a></li>
+                        <li><a href="#">Gift Vouchers</a></li>
+                    </ul>
+                </div>
+                <div class="foot_help">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">Help Centre</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Submit an Idea</a></li>
+                        <li><a href="#">Suggest a Product</a></li>
+                        <li><a href="#">Shipping and Delivery</a></li>
+                        <li><a href="#">Pickup Points</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+                <div class="foot_account">
+                    <h4>Account</h4>
+                    <ul>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Personal Details</a></li>
+                        <li><a href="#">Invoices</a></li>
+                    </ul>
+                </div>
+                <div class="foot_company">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Sell on Buy a Bit</a></li>
+                        <li><a href="#">Deliver for Buy a Bit</a></li>
+                        <li><a href="#">Press & News</a></li>
+                        <li><a href="#">Competitions</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Human rights Statement</a></li>
+                        <li><a href="#">Advocation Process</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <!--JavaScript doc link - price slide functionality-->
+        <script src="ecom_site.js" type="text/javascript">
+
+        </script>
+    </body>
+</html>
